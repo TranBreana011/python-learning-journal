@@ -1,4 +1,5 @@
 Things I've learned about:
+
 Reviewed objects, methods, and variables
 - many variables,
 
