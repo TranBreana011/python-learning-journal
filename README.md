@@ -6,7 +6,7 @@ With intermediate experience in C++ and brief knowledge of python, I would like 
 to further my skills until satisfaction. As I have always been intrigued in technology, I'm excited to be able to being exploring it!
 
 Goals for This Course: Gain more knowlegde on python and its versaility such as its specific and unique functions.
-I want to end this course with a solid and foundational base of Python that leaves me confident in working
+I want to leave this course with a solid and foundational base of Python that leaves me confident in working
 through this language when needed.
 
 
