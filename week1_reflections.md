@@ -3,6 +3,8 @@ Things I've learned about:
 Reviewed objects, methods, and variables
 - many variables,
 
+Can't use encapsulation because there isn't any private/public/protected unlike C++
+
 Reviewed inheritance, "has-a"/"is-a" relationships
 
 Data structures are heavily important; they increase efficiency in daily life and is used as a memory system
