@@ -33,7 +33,7 @@ Partition Psuedocode:
 
 Merge Sort: Split an array in two until you are down to one element arrays, then merge them back up one pair at a time in sorted order
 - always split down the middle
-- guarantees the most effective divide and conquer but we are going to need extra memory space
+- guarantees the most effective divide and conquer but we are going to need extra memory space, space complexity is a problem
 1. Split
 2. Sort
 - it's more efficient
