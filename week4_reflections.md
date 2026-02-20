@@ -5,6 +5,7 @@ Ordering Data:
 - Insertion Sort: Maintains unsorted and sorted parts of the list; rather than scanning unsorted section for the smallest and shuffling it forward,
 
 Insertion Sort for sorting cards: for every pos in arr (after first) take pos and while the previous position is larger than post and we are not at the end== swap position back by one
+- O(n) is the best 
 
 Fast Sorting Algorithms: In order to efficiently sort large amount of data, we must do better than O(n^2). How to efficiently tackle a big task? DIVIDE AND CONQUER
 
@@ -27,7 +28,14 @@ Partition Psuedocode:
   -- if current element is less or equal to pivot, increment i and swap arr[i] with arr[curr]
   -- at end of loop i will be in pivot's spot, swap it into place
   -- return pivot location so it can be excluded in recursive calls
-- average case: linearithmic O(n log n)
-- worst case: quadratic O(n^2)
+- average case: linearithmic O(n log n) because you pick the middle 
+- worst case: quadratic O(n^2) because you only go through one at a time
 
-Merge Sort:
+Merge Sort: Split an array in two until you are down to one element arrays, then merge them back up one pair at a time in sorted order
+- always split down the middle
+- guarantees the most effective divide and conquer but we are going to need extra memory space
+1. Split
+2. Sort
+- it's more efficient
+- weaves back in place one at a time
+- 
