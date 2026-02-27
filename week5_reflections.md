@@ -14,7 +14,7 @@ Python implements a list as a dynamic array, it also has the behavior that it do
 
 When we have space, it's O(1)
 
-Prepend and Append is ammortized O(1), most of the time it will be O(1)
+Prepend and Append is ammortized O(1), most of the time it will be O(1) but occansionally we need to allocate more space
 
 Linked Lists: constructed using objects, grows and shrinks during run-time, doubly linked list: a variation with pointers in both directions
 - objects backbone of such structures
@@ -28,6 +28,28 @@ Nodes and Linked Lists:
     - provide "links"
 - also applies to memory,
 - We need the reference/pointer
+- each node points to another node, by storing an address
+- always keep track of the head of the list so we know the order of the list!
+    - make sure the head stays the head
+
+Memory Leak: lost access to memory, shrunk how much memory we can work with
+- be super careful about it
+
+Prepend is O(n) because we shift every element one space to the right ONCE to make one new room for the beginning of the list
+- if you are appending to an empty linked list, do as in prepend
+
+Insert in a Linked List = inserting in the middle of a linked list
+
+Indexing is very expensive for linked lists, expensive for any position besides the front and back
+
+Arrays
+- random access - allows for direct access of any element in an array
+
+Sorting Efficiency
+
+Doubly Linked Lists: all you do is make one change at the node, we add self.prev = None
+
+Deleting a Node from a Doubly Linked List
 
 Trees: 
 
