@@ -46,7 +46,7 @@ For doubly linked lists:
 
 Queue Applications:
 - in computer networks, queues manage packet sequencing between devices
-- operating systems employ queues for task scheduling and CPU access prioritization
+- **operating systems** employ queues for task scheduling and CPU access prioritization
 - web servers use queues to handle incoming requests with available resources
 - print queues organize the printing order of documents
 - queues are integral to algorithm like breadth-first search in graph theory
