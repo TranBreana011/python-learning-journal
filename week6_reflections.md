@@ -52,3 +52,60 @@ Queue Applications:
 - queues are integral to algorithm like breadth-first search in graph theory
 
 System of Priority: Priority Queues
+
+Why not treat everything equally?
+- importance
+    - pre-requisite, time-sensitive, cost/reward, resources
+
+Optimization Processes: 
+- continuous processes, go in and execute processes every second
+
+Priority Queues:
+- self.priority = priority
+
+- two systems: low and high priority
+- if one is low, everything else is high, vice versa
+- it's like flipping a greater than or less than symbol
+
+Priority Queue Operations:
+- enqeueue(data, priority) - O(n)
+- dequeue() - removes data at the top of the list and return it - O(1)
+- peek() - removes data at the top of the list and does not return it - O(1)
+
+
+Tree: A data structure, similar to a linked list, every item can be followed by more than onee item(many branches)
+- the top of the tree == root aka the max value or the largest number
+- traversals 
+
+Binary Tree: 
+- is ordered
+- can have null values but still need to have multiple bracnhes and every item can be followed by at most 2 other items
+- 
+
+List: ordered, null values, duplicates, every item can be followed by at most 1 other item (no branches)
+
+Heaps are natural Priority Queues
+O(log n) when we have to replace the root
+Peek stays O(1)
+
+A Max Heap is a tree based on a binary tree where it has a max of two branches: 
+- head == parent
+- the branches == children
+- every parent is >= children
+- In the worst case scenario, it would be O(log n)
+
+A Min Heap is flipping the sign so:
+- every parents <= children
+
+Binary Search: O(log n)
+- every level you go through, you go through twice as much
+
+Representing Heaps with Arrays:
+- complete trees are difficult to insert into
+- so, represent Heaps as an array insantly
+- can jump from child to child
+- can traverse forward and backward
+- or integer division
+- makes it very easy to swap indicies
+- import heapq: now have access to a python library of heaps and with that we can do things like heapify to pass things into, to print things in sorted order (not everytime), heappop, heappeek
+- 
