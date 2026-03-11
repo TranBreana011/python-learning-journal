@@ -70,6 +70,10 @@ Open Addressing Basics:
 - need two different types of empty values:
     - Null - never been used before
     - Deleted - element previously existed here
+    - if we reach null then we know that whatever we are looking for never existed
  
 Clustering: where a bunch of similar values wind up colliding in a particular location, creating further risk of collisions
 Clustering is a sign of a bad hash function or a bad collision resolution method
+
+Step 1: remove (ant)
+Step 2: get (ape)
