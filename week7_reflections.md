@@ -121,4 +121,15 @@ Open Addressing Pros and Cons:
     - Load Factor: Performance degrades as the load factor increases. a load factor below 0.7 is usually desirable
     - when ABOVE 0.7, in order to make our hash table more efficient again, we should resize!!!!!!!! simply make the capacity bigger
  
-    - 
+Resize operation = O(n)
+
+In chaining:
+Separate Chaining
+- we have buckets, continue growing
+- we don't have to worry about probing
+- we will only get collisions if they hash to the same thing
+- but,,, it's entirely possible that everything is clustered into the same spots
+    - still have to worry about the load factor
+- make sure to pick a good hash space in order to avoid any collisions
+
+
