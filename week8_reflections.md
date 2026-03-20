@@ -59,4 +59,52 @@ Operations:
     - Binary Search Trees lend themselves naturally to searching
         - its in the name after all
     - we can follow the binary search algorithm, adapting it for traversal through a tree
-  1. we start at the root 
+    - always going to be in sorted order because values smaller will be on the left and values bigger than will be on the right
+    - this operation is O(log n) because
+    - if our binary search tree is perfect then it will be O(log n)
+        - can't always count on perfect
+        - only if we have 1, 2, 4, 16
+    - if our binary search tree is complete then it is O(log n)
+    - if our binary search tree is full, it helps us find if the bst is complete or full
+  1. we start at the root
+     - if less go left
+     - if greater go right
+     - if equal depends on tree requirements, could updates go left, ignore operation, etc
+  3. compare values
+  4. once leaf is reached, add new node to the leaf
+
+Insertion Algorithm
+- adding a node is not sufficient, we must also maintain all properities of a BST while doing so
+- ex. tree.insert(35, "__")
+- parent.left = New Node
+
+Insertion Efficiency:
+- looking at it closely, insertion is very similar to search
+- we're just searching for a leaf to place a node at
+- in a balanced tree, insertion is a O(log n) operation
+- In the worst case scenario, insertion is O(n)
+
+Deletion Algorithm
+- removing a node is much more complex than searching or inserting, only really simple when you remove a leaf node
+- 1. locate the Node via search
+  2. check possible node deletion case
+     - if the node is a leaf, remove it (break parent's link)
+     - if the node has one child, link the node's parent to that child
+     - if node has two children, find the inorder successor (the smallest value in the right subtree) and replace the value of the node to be deleted with the value of the inorder successor
+- the garagbe can will clean up our deletions
+
+Deletion Efficiency:
+- while deletion relies on a number of matters...
+
+Tree Traversal Types:
+- Inorder Traversal:
+  - steps: traverse down left subtree, visit the root, traverse down right subtree
+  - usage: using in a bst, inorder traversal will visit nodes in ascending order
+- Preorder Traversal:
+  - steps: visit the root, traverse down the left subtree, traverse the right subtree
+  - usage: using preorder traversal, it is possible to create a copy of the BST since you are visiting the nodes in the order in which they would be added
+  - very useful
+- Postorder Traversal: bottom->top, left->right
+  - steps: traverse the left subtree, traverse the right subtree, visit the root
+  - usage: while not as important in python, post order traversal is helpful in deleting the tree while not accidentally unlinking any node and causing memory leak
+
