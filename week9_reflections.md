@@ -56,3 +56,27 @@ function LeftRightRotate(current)
     return rightRotate(current)
   end function
 
+When to use Single or Double Rotation?
+- after you have determined to which side the tree skews, take the node at the root of the skewed tree (St)
+- Compare the heights of St subtrees against each other
+    - if the grandchild with the tallest height is in same direction as skew, only single rotation is needed
+    - if the grandchild with the tallest height is in the opposite direction as skew, double rotation is needed
+ 
+AVL Insertion/Deletion:
+- perform the insertion or deletion operation as you would in a BST
+- update the height of each node
+- perform AVL rotations as necessary to rebalance the tree
+
+- when it comes to performing an insertion, we are affecting everything from the path from the node to the root
+- we only care about the path from the root to the node
+
+Analysis of AVL trees:
+advantages:
+- height becomes O(log n)
+- search, insertion, deletion operations become o(log n)
+
+disadvantages:
+- frequent rotation operations
+- complexity
+
+- the bigger the BST the more we benefit from O(log n)
