@@ -80,3 +80,5 @@ disadvantages:
 - complexity
 
 - the bigger the BST the more we benefit from O(log n)
+
+an avl tree can use anything comparable 
