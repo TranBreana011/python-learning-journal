@@ -61,5 +61,20 @@ Choosing the right kind of graph can have extremely important effects
 - the fundamentals
 
 Graph Representation
+- Graphs can be represented (implemented) in a computer's memory in mainly two ways:
+    - Adjacency lists
+    - Adjacency matrices
+- Which implementation you should use depends on your particular use case for the graph
 
+Adjacency Lists
+- An adjacency list is a collection of lists or arrays that represent which vertices are adjacent to which other vertices. Here's how it works
+- Structure:For each vertex in the graph, we store a list of all the vertices that are connected to it by an edge. This can be done using an array, a linked list, a mpa, or any other collection type
+
+Adjacency Pros and Cons:
+Advantages:
+- it's space efficient for sparse graphs (graphs with fewer edges)
+- it allows for efficient iteration over the edges adjacent to any given vertex
+Disadvantages:
+- checking for the presence of a specific edge can be slower than with an adjacency matrix, as it may require a linear search through the list
+- it can be less efficient for dense graphs (graphs with many edges)
 
