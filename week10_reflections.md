@@ -78,3 +78,22 @@ Disadvantages:
 - checking for the presence of a specific edge can be slower than with an adjacency matrix, as it may require a linear search through the list
 - it can be less efficient for dense graphs (graphs with many edges)
 
+Sparse Graph:
+- minimum amount of edges
+
+Dense Graph:
+- has all possible total edges
+
+If a gprah is non simple, then an adjacency list could be beneficial
+
+Adjacency Matrices
+- an adjacency matrix is a 2D array that represents the presence or absence of edges between vertices in the graph: Here's a breakdown
+- Structure: It's a square matrix (an array of arrays), where each row and column represent a vertex. The entry 'matrix[i][j]' is true or has weight if there is an edge from vertex i to vertex j, and false or zero weight if there is no edge.
+
+Adjacency Matrices Pros and Cons:
+ADvantages:
+- it allos for quick cheks of whether an edge exists between two vertices, which is constant time O(1) operation
+- its straightforward and easy to implement for dense graphs
+Disadvantages:
+- it can be space-inefficient, espeically for sparse graphs, as it requires storing space for every possible connection, used or not.
+- Iterating over the edges can be slower, as you need to check every possible vertex pair
