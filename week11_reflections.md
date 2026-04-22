@@ -20,6 +20,9 @@ going to adapating graph theory for transportation
 use graph theory to model a simplified a transit network of a fictional city
 use the traversal algorithms 
 it's a directed graph!!!!!!!!!!!!!
+implement a method of BFS and DFS that keeps tracks of landmarks we've visited
+edges are the 15 roads
+analyze the length of time and how which scenario might be preferred over another....?
 
 
 Final:
