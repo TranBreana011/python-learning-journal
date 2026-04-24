@@ -152,7 +152,7 @@ What is DA?
 - only works in weight graph, with non-negative edges
 - It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later
 
-Djikstra's Algorithm Psuedocode
+Dijkstra's Algorithm Psuedocode
 1. Initialization: start by setting the shortest distance to the source vertex as 0 and to all other vertices as infinity. Set the source as the current vertex
 2. Relaxation: For the current vertex, consider all of its unvisited neighbors and calculate the tenative distances through the current vertex. Compare the newlt calculated tenative disance to the current assigned value and assign the smaller one
 3. Updating: Once we have considered all unvisited neighbors of the current vertex, mark the current vertex as visited. A visited vertex will not be checked again
