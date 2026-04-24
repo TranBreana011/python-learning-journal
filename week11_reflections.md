@@ -160,3 +160,8 @@ Dijkstra's Algorithm Psuedocode
 5. Termination: Repeat steps 2 through 4 until all vertices have been visited
 
 - if you already visit a vertex, you never visit their direction again
+
+Djikstra's Properties:
+- Greedy Method: the algorithm makes a locally optimal choice at each step, which leads to a globally optimal solution
+- Time Complexity: the time complexity can range from O(V^2) to O(V+E log V), depending on the implementation of the priority queue (with V being the number of vertices and E the number of edges).
+- Non-negative Weights: Dijkstra's algorithm assumes that all edge weights are non-negative. This constraint is because once a vertex is visited (i.e., the shortest path to this vertex is considered found), it will not be re-visited and hence the path cannot be improved.
