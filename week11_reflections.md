@@ -99,3 +99,64 @@ DFS Psuedocode:
      1. Pop a node from the stack to use
      2. If that node has not been visited, mark it as being visited, and print the node
      3. For all non-visited adjacent nodes to the current node, push them onto the stack
+  
+Weighted Graphs
+- a weighted graph is a graph in which each edge is assigned a numerical value or weight
+- these weights can represent quantities such as cost, length, or capacity, depending on the context of the problem being represented by the graph
+- eadges represented as (u, v, w) triplets
+    - u and v represent vertices, w represents weight
+ 
+Applications of Weighted Graphs:
+- network routing: in computer networks, weights can represent bandwidth, latency, or other routing metrics
+- road maps: in geographic informartion systems (GIS), weights may represent the length of the road, traffic conditions, or travel time
+- scheduling: in project management, a weighted graph could repersent tasks to be performed, with weights representing tiime duration or resource usage
+
+Weighted Graph Challenges:
+- Working with weighted graphs introduces complexity not present in unweighted graphs
+- For example, finding the shortest path is not as straightforward as counting the number edges
+- Additionally, negative weights can create scenairos where more complex algorithms are needed
+
+Reward Hacking:
+- just algorithmic math, finding the highest reward value
+- abuses the algo
+
+Greedy Algorithms:
+- a method for solving problems by making a sequence of choices based on **limited information** with the hope it will be optimal
+- At each decision point, the algorithm chooses the option that is most beneifical at the moment
+- Does not generally guarantee a globally optimal(the best option) solution
+    - called globally optimal to be distinguished from local optimal(the best option in our current situation)
+
+Gradient Descent:
+- an iterative optimization algorithm used in machine learning to minimize a cost function by updating model parameters (weights and bias) in the opposite direction of the gradient
+
+Example:
+- Basic Concept:
+    - consider jobs that need to be completed by certain deadlines with given profits
+        - goal: Maxmize total profit of completed jobs
+- Algorithmic Steps:
+  1. selection criterion: choose the job with the highest profit available at the moment
+  2. Feasibility Check: Check if this job can be completed before its deadline
+  3. Solution Construction: If feasible, include the job in the final solution
+  4. Iterative Process: Repeat until no further jobs can bed added without violating the deadline constraint
+
+Greedy Choice:
+- the basis of Greedy Algorithms is greedy choice
+- in the absence of any further information, picking the local opitmal solution is more likely to lead to a global optimal outcome than any other selection
+- Heuristic-based(rule of thumb), we can't speculate about future gains all we know is the gains we're making at the moment
+
+NP hard is when an efficient solution doesn't exist, the optimal solution requires to check/go through every single case
+
+Dijkstra's Algorithm
+What is DA?
+- Dijkstra's algorithm is a classic algorithm for finding the shortest path from a single source vertex to all other vertices
+- only works in weight graph, with non-negative edges
+- It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later
+
+Djikstra's Algorithm Psuedocode
+1. Initialization: start by setting the shortest distance to the source vertex as 0 and to all other vertices as infinity. Set the source as the current vertex
+2. Relaxation: For the current vertex, consider all of its unvisited neighbors and calculate the tenative distances through the current vertex. Compare the newlt calculated tenative disance to the current assigned value and assign the smaller one
+3. Updating: Once we have considered all unvisited neighbors of the current vertex, mark the current vertex as visited. A visited vertex will not be checked again
+4. Selection (Greedy choice): select the unvisited vertex with the smallest tenative distance set during the relaxation process, and set it as the new "current vertex"
+5. Termination: Repeat steps 2 through 4 until all vertices have been visited
+
+- if you already visit a vertex, you never visit their direction again
