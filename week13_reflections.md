@@ -21,3 +21,36 @@ Memoization vs. Tabulation:
 Benefits of Dynamic Programming:
   - Reduces time complexity by transforming the problem into a series of decisions
   - Improves efficiency by storing intermediate results and reusing them
+
+Use a list to hold all the calls you've already made with its answers to create a faster fib sequence.
+
+Dynamic Programming vs. Greedy Algorithms:
+Greedy Algorithms:
+- make local optimal decisions
+- do not reconsider choices, faster but less flexible, WE WANT TO BE AS FAST AS POSSIBLE without having to look back
+- Can fail to find global optimal solution
+Dynamic Programming:
+- look at previous decisions to make informed choice about current state
+- generally used when greedy fails to get optimal solution
+- Often has higher time complexity due to exhaustive search
+
+When to Use Dynamic Programming:
+Combinatorics: For example, counting the number of ways to traverse a grid
+Probability/Statistics: Such as finding the likelihood of outcomes in a complex scenario
+Algebra: Like calculating the nth Fibonacci number or the ways to multiply a chain of matrics
+Graphs: For instance, finding the shortest path in a weighted graph with Dijkstra's Algorithm (which uses a greedy approach) or the Floyd-Warshall algorithm(which used DP)
+
+Longest Common Subsequence:
+Common Dynamic Programming problem: and not uncommon interview question
+Problem: Given two sequences, find length of their longest common subsequence, contiguity is not required but order is
+Example: Sequences "DHJRET" and "JDGHTF" have the longest common subsequence of "DHT"
+
+Dynamic Programming Solution:
+- Initialize a (n + 1) x (m + 1) matrix where mat[i][j] represents the length of the longest common substring ending at position i-1 in string and j-1 in string 2
+    - initialize with 0s
+ - Loop through entire matrix starting at 1 in both axis
+     - if sequence 1 at i - 1 and sequence 2 at j-1 match, set mat[i][j] = mat[i-1][j-1] + 1
+     - else, set mat[i][j] = max(mat[i-1][j], mat[i][j-1])
+- Final longest substring length in mat[n][m]
+
+Implementation: DIVIDE AND CONQUER
