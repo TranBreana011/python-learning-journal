@@ -54,3 +54,7 @@ Dynamic Programming Solution:
 - Final longest substring length in mat[n][m]
 
 Implementation: DIVIDE AND CONQUER
+
+B-Trees:
+- a tree to store numbers
+- wont be on final
