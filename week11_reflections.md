@@ -92,9 +92,11 @@ DFS Properties:
 
 DFS Data Structures:
 - Again, much like BFS we need to rely on another data structure
+- focused on novelty, focused ON ANYTHING NEW
+- similar to BFS, but the switch in data structure changes the behavior
 
 DFS Psuedocode:
-1. Create new stack and Boolean array, start at source vertex and add it to stack
+1. Create new stack and Boolean array, start at source vertex and add it to stack(FIFO)
 2. While the stack is not empty:
      1. Pop a node from the stack to use
      2. If that node has not been visited, mark it as being visited, and print the node
